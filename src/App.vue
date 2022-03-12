@@ -5,10 +5,6 @@ setTimeout(() => {
 	num.value = 3
 }, 3000)
 
-onMounted(() => {
-	console.log(num.value);
-})
-
 </script>
 
 <template>

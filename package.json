@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "webpack serve --mode=development --config ./build/webpack.config.js",
     "build": "webpack --mode=production --config ./build/webpack.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+		"commit": "npx cz"
   },
-	"lint-staged": {
-		"*.{vue,js,ts}": "eslint --fix"
-	},
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,14 +19,18 @@
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "@soda/friendly-errors-webpack-plugin": "^1.8.1",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "@vue/compiler-sfc": "^3.2.31",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
+    "commitizen": "^4.2.4",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
+    "cz-customizable": "^6.3.0",
     "eslint": "^8.10.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -61,5 +66,10 @@
     "vue": "^3.2.31",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
