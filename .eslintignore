@@ -1,4 +1,3 @@
-dist
-public
-build
-*.d.ts
+/build/
+/dist/
+/node_modules/

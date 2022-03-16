@@ -1,20 +1,11 @@
 <script lang="ts" setup>
-const num = ref<number>(1)
-
-setTimeout(() => {
-	num.value = 3
-}, 3000)
-
+import { dateZhCN as dateLocale, zhCN as locale } from 'naive-ui'
 </script>
 
 <template>
-	<div class="app">
-		<HelloWorld msg="vue3_webpack_ts" />
-	</div>
+	<n-config-provider :date-locale="dateLocale" :locale="locale" style="width: 100%; height: 100%">
+		<router-view />
+	</n-config-provider>
 </template>
 
-<style lang="scss" scoped>
-.app {
-	color: red;
-}
-</style>
+<style lang="scss" scoped></style>

@@ -68,7 +68,7 @@ module.exports = {
 				filepath: './.eslintrc-auto-import.json',
 				globalsPropValue: true
 			},
-			imports: ['vue', 'vue-router', 'vuex'],
+			imports: ['vue', 'vue-router', 'pinia'],
 			dts: 'src/types/auto-imports.d.ts',
 			sourceMap: true
 		}),
@@ -87,7 +87,7 @@ module.exports = {
 			filename: 'css/bundle.[fullhash].css'
 		}),
 		new HtmlWebpackPlugin({
-			title: 'vue3_webpack_ts',
+			title: 'X Admin',
 			template: './index.html',
 			inject: 'body'
 		})

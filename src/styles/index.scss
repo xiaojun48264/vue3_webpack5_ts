@@ -1,11 +1,1 @@
-body {
-  height: 100vh;
-  width: 100vh;
-  background-color: antiquewhite;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-image: url('../assets/images/ceshi.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
+@use 'globel';
